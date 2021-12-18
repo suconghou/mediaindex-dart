@@ -5,5 +5,5 @@ repository: https://github.com/suconghou/mediaindex-dart
 homepage: https://github.com/suconghou/mediaindex-dart
 publish_to: https://pub.dev
 environment:
-  sdk: '>=2.13.0 <3.0.0'
+  sdk: '>=2.15.1 <3.0.0'
   
