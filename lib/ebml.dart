@@ -153,11 +153,11 @@ class EbmlParser {
     final List<List<int>> info = [];
     data[0].children.forEach((element) {
       if (element.id == "bb") {
-        final CueTime = element.children[0];
-        final CueTrackPositions = element.children[1];
+        final cueTime = element.children[0];
+        final cueTrackPositions = element.children[1];
         // final CueTrack = CueTrackPositions.children[0];
-        final CueClusterPosition = CueTrackPositions.children[1];
-        info.add([CueTime.value, CueClusterPosition.value]);
+        final cueClusterPosition = cueTrackPositions.children[1];
+        info.add([cueTime.value, cueClusterPosition.value]);
       }
     });
     var segmentStart = indexEndOffset - info[0][1] + 1;
