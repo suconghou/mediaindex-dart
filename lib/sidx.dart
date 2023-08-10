@@ -60,7 +60,7 @@ class Sidx {
     };
   }
 
-  int read(int n, {ignore: false}) {
+  int read(int n, {ignore = false}) {
     if (ignore) {
       index += n;
       return 0;
